@@ -1,0 +1,1 @@
+Toy project, the goal is fibonacci sequence to 100 in 10 languages. :)
