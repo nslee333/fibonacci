@@ -1,6 +1,7 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. HELLO.
        PROCEDURE DIVISION.
+           SECTION.
            DEFINE VARIABLE var1 as NUMERIC.
            PERFORM UNTIL var1 > 10
                 DISPLAY var1.
