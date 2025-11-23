@@ -1,13 +1,16 @@
 pub fn fibonacci() {
-    let mut a = 0;
-    let mut b = 1;
+    let mut f0 = 0;
+    let mut f1 = 1;
     let mut result = 0;
 
-    while result <= 1000 {
-        result = a + b;
-        a = b;
-        b = result;
+    println!("{f0}");
+    println!("{f1}");
+    // println!()
+    while result != 6765 {
+        result = f0 + f1;
         println!("{result}");
+        f0 = f1;
+        f1 = result;
     }
 }
 

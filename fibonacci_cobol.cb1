@@ -1,0 +1,20 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLO.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 VAR1 pic 9(4) value 0.
+       77 VAR2 pic 9(4) value 1.
+       77 RESULT pic 9(4) value 0.
+
+       PROCEDURE DIVISION.
+       DISPLAY RESULT
+       PERFORM UNTIL RESULT = 6765
+           COMPUTE RESULT = VAR1 + VAR2
+           COMPUTE VAR1 = VAR2
+           COMPUTE VAR2 = RESULT
+           DISPLAY RESULT
+     
+       END-PERFORM.
+           
+       STOP RUN.
